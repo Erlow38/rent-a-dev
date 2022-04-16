@@ -29,10 +29,6 @@ nav a {
     font-size: large;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 #user {
     width: 50px;
     height: 50px;
@@ -59,3 +55,24 @@ div img{
     margin: 10px;
 }
 
+nav a::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    display: block;
+
+    position: relative;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+
+    background: #333;
+    transition: bottom .2s ease, width .3s ease .2s;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+    bottom: 0;
+    transition: width .3s ease, bottom .2s ease .3s;
+}

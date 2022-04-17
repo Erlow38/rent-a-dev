@@ -13,6 +13,10 @@ header nav {
     margin-right: 2em;
 }
 
+header nav a {
+    padding-top: 1em;
+}
+
 header ul {
     display: flex;
 }

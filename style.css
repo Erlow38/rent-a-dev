@@ -80,3 +80,56 @@ nav a:hover::after {
     bottom: 0;
     transition: width .3s ease, bottom .2s ease .3s;
 }
+
+
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4e4e4e;
+    z-index: 101;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .transition-1.-is-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .transition-2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    background-color: #4e4e4e;
+    z-index: 101;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .transition-2.is-active {
+    left: 0;
+  }
+  
+  .transition-3 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #4e4e4e;
+    z-index: 101;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .transition-3.is-active {
+    top: 0;
+  }
+  

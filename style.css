@@ -1,3 +1,5 @@
+
+
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
@@ -132,4 +134,78 @@ nav a:hover::after {
   .transition-3.is-active {
     top: 0;
   }
-  
+
+.prix {
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 1;
+    color: #6ED8B2;
+    right: 10%;
+}
+
+span::before {
+    content: "";
+    width: 400px;
+    height: 0%;
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+span:hover::before {
+    height: 70px;
+}
+
+span:hover ~ .conteneur {
+    opacity: 1;
+}
+
+span{
+    cursor: pointer;
+    position: relative;
+}
+
+section div {
+    position: relative;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.3s;
+    padding-left: 5%;
+    position: relative;
+    bottom: 75px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.note {
+    color: #F5D45F;
+}
+
+.nom {
+    color: black;
+}
+
+.conteneur2 {
+    margin-left: 10px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}

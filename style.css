@@ -61,7 +61,7 @@ div img{
     margin: 10px;
 }
 
-nav a::after {
+.other::after {
     content: '';
     width: 0%;
     height: 1px;
@@ -69,7 +69,7 @@ nav a::after {
 
     position: relative;
     left: 50%;
-    bottom: -3px;
+    bottom: 3px;
     transform: translateX(-50%);
 
     background: #333;
@@ -77,10 +77,21 @@ nav a::after {
 }
 
 
-nav a:hover::after {
+.other:hover::after {
     width: 100%;
     bottom: 0;
     transition: width .3s ease, bottom .2s ease .3s;
+}
+
+.current {
+    content: '';
+    display: block;
+
+    position: relative;
+    bottom: -3px;
+
+    text-decoration: underline;
+
 }
 
 

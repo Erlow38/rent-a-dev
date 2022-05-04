@@ -17,8 +17,29 @@
                     <li><a class="other" href="backend.html">back end</a></li>
                     <li><a class="other" href="Database.html">data base</a></li>
             </nav>
-            <img id="user" src="user.png" alt="user" >
+            <a href="#demo"><img id="user" src="user.png" alt="user" ></a> 
 
+            <div id="demo" class="modal">
+            <div class="modal_content">
+                <h1>Login</h1>
+
+                <form method="post" action="traitement.php">
+                    <p>
+                        <label for="pseudo"></label>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Username..." size="30" maxlength="10" />
+                    </p>
+                </form>
+
+                <form method="post" action="traitement.php">
+                    <p>
+                        <label for="pseudo"></label>
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Password..." size="30" maxlength="10" />
+                    </p>
+                </form>
+
+                <a href="#" class="modal_close">&times;</a>
+            </div>
+            </div>
         </header>
 
         <section class="box">

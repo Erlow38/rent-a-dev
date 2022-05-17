@@ -192,6 +192,10 @@ section div {
     border-radius: 50%;
 }
 
+.container {
+    display: flex;
+}
+
 .conteneur {
     display: flex;
     flex-direction: row;
@@ -289,4 +293,5 @@ form {
 
 .prelogin {
     margin-top: 10px;
+    margin-right: 5px;
 }
